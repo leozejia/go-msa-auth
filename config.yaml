@@ -1,0 +1,5 @@
+server:
+  port: ":8080"             # 服务监听的端口号
+
+database:
+  path: "auth.db"           # SQLite 数据库文件路径

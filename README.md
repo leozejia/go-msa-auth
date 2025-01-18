@@ -24,3 +24,21 @@
 ---
 
 ## 项目结构
+go-msa-auth/
+├── cmd/                   # 服务入口点
+│   └── main.go            # 主入口文件
+├── config/                # 配置文件和加载逻辑
+│   └── config.go          # 配置加载逻辑
+├── internal/              # 核心业务逻辑模块
+│   ├── handlers/          # HTTP 路由处理器
+│   │   └── auth_handler.go # 授权处理逻辑
+│   ├── models/            # 数据库模型和数据访问层
+│   │   └── database.go    # 数据库初始化和操作
+│   ├── services/          # 业务逻辑层
+│   │   └── auth_service.go # 授权服务逻辑
+│   └── utils/             # 通用工具
+│       └── time_utils.go  # 时间工具函数
+├── server/                # 服务器初始化
+│   └── server.go          # 路由绑定和服务器启动
+├── go.mod                 # Go 模块文件
+└── README.md              # 项目说明文档
